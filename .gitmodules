@@ -1,0 +1,3 @@
+[submodule "Tyrone4/vendor/spdlog"]
+	path = Tyrone4/vendor/spdlog
+	url = https://github.com/gabime/spdlog

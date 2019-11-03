@@ -4,7 +4,7 @@ class Sandbox : public Tyrone4::Application {
 
 public:
 	Sandbox() {
-
+		TY_CORE_INFO("Started Sandbox Application.");
 	}
 	~Sandbox() {
 

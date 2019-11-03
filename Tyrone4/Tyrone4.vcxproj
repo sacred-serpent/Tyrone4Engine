@@ -57,6 +57,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>TY_PLATFORM_WINDOWS;TY_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Tyrone4\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -71,6 +72,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>TY_PLATFORM_WINDOWS;TY_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Tyrone4\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -79,9 +81,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Tyrone4-core\Log.cpp" />
     <ClCompile Include="src\Tyrone4-core\Application.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Tyrone4-core\Log.h" />
     <ClInclude Include="src\Tyrone4-core\Application.h" />
     <ClInclude Include="src\Tyrone4-core\Core.h" />
     <ClInclude Include="src\Tyrone4-core\EntryPoint.h" />

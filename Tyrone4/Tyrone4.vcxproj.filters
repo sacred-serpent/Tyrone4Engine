@@ -27,9 +27,15 @@
     <ClInclude Include="src\Tyrone4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Tyrone4-core\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Tyrone4-core\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tyrone4-core\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
