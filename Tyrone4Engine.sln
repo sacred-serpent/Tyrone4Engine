@@ -5,22 +5,22 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tyrone4", "Tyrone4\Tyrone4.vcxproj", "{8F00EC50-DCE2-4D79-84D4-A5C440F1842D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{B2F7E5BA-D917-4FFA-8282-C8CE9F49192E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8F00EC50-DCE2-4D79-84D4-A5C440F1842D}.Debug|x64.ActiveCfg = Debug|x64
 		{8F00EC50-DCE2-4D79-84D4-A5C440F1842D}.Debug|x64.Build.0 = Debug|x64
-		{8F00EC50-DCE2-4D79-84D4-A5C440F1842D}.Debug|x86.ActiveCfg = Debug|Win32
-		{8F00EC50-DCE2-4D79-84D4-A5C440F1842D}.Debug|x86.Build.0 = Debug|Win32
 		{8F00EC50-DCE2-4D79-84D4-A5C440F1842D}.Release|x64.ActiveCfg = Release|x64
 		{8F00EC50-DCE2-4D79-84D4-A5C440F1842D}.Release|x64.Build.0 = Release|x64
-		{8F00EC50-DCE2-4D79-84D4-A5C440F1842D}.Release|x86.ActiveCfg = Release|Win32
-		{8F00EC50-DCE2-4D79-84D4-A5C440F1842D}.Release|x86.Build.0 = Release|Win32
+		{B2F7E5BA-D917-4FFA-8282-C8CE9F49192E}.Debug|x64.ActiveCfg = Debug|x64
+		{B2F7E5BA-D917-4FFA-8282-C8CE9F49192E}.Debug|x64.Build.0 = Debug|x64
+		{B2F7E5BA-D917-4FFA-8282-C8CE9F49192E}.Release|x64.ActiveCfg = Release|x64
+		{B2F7E5BA-D917-4FFA-8282-C8CE9F49192E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
