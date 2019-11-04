@@ -83,8 +83,10 @@
   <ItemGroup>
     <ClCompile Include="src\Tyrone4-core\Log.cpp" />
     <ClCompile Include="src\Tyrone4-core\Application.cpp" />
+    <ClCompile Include="src\Tyrone4-math\Matrix.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Tyrone4-math\Matrix.h" />
     <ClInclude Include="src\Tyrone4-core\Log.h" />
     <ClInclude Include="src\Tyrone4-core\Application.h" />
     <ClInclude Include="src\Tyrone4-core\Core.h" />
