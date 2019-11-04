@@ -1,7 +1,9 @@
-bin/
-bin-int/
+bin/*
+!premake
+bin-int/*
 .vs/
 
-*.vcsproj
-*.sln
 *.user
+*.filters
+*.sln
+*.vcxproj
