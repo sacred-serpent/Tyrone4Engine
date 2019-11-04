@@ -1,2 +1,2 @@
-"# Tyrone4" 
+# Tyrone4
 A simple game engine.
