@@ -2,4 +2,6 @@ bin/
 bin-int/
 .vs/
 
+*.vcsproj
+*.sln
 *.user

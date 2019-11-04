@@ -23,6 +23,8 @@ namespace Tyrone4 {
 		int rowSize;
 		int colSize;
 
+		void alloc();
+
 	};
 
 }

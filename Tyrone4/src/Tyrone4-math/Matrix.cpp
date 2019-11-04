@@ -6,19 +6,47 @@ namespace Tyrone4 {
 		matrix.resize(rowSize);
 		for (std::vector<double>& col : matrix) {
 			col.resize(colSize);
+			for (double& n : col) {
+				n = 0;
+			}
 		}
 	}
 
-	Matrix::~Matrix() {}
+	Matrix::~Matrix() {
+		for (int i = 0; i < rowSize; ++i) {
+			delete &matrix[i];
+		}
+		delete &matrix;
+	}
 
 	std::vector<double>& Matrix::operator[](const int i) { return matrix[i]; }
-
+	
 	Matrix& Matrix::operator=(const Matrix& m) {
 		if (this == &m) {
 			return *this;
 		}
 
-		// ADD = OPERATOR
+		if (m.colSize != colSize || m.rowSize != rowSize) {
+			for (int i = 0; i < rowSize; ++i) {
+				delete& matrix[i];
+			}
+			delete& matrix;
+
+			rowSize = m.rowSize;
+			colSize = m.colSize;
+			matrix.resize(rowSize);
+			for (std::vector<double>& col : matrix) {
+				col.resize(colSize);
+			}
+		}
+
+		for (int i = 0; i < rowSize; ++i) {
+			for (int j = 0; j < colSize; ++j) {
+				matrix[i][j] = m.matrix[i][j];
+			}
+		}
+
+		return *this;
 	}
 
 	Matrix Matrix::transpose() {
@@ -42,6 +70,10 @@ namespace Tyrone4 {
 				}
 			}
 			return (*this = temp);
+		}
+
+		else {
+			return *this;
 		}
 	}
 
