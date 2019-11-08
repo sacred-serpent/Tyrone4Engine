@@ -1,7 +1,5 @@
 #pragma once
 
-#include <vector>
-
 namespace Tyrone4 {
 
 	class Matrix {

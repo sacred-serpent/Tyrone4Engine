@@ -1,3 +1,4 @@
+#include "typch.h"
 #include "Matrix.h"
 
 namespace Tyrone4 {
@@ -11,7 +12,7 @@ namespace Tyrone4 {
 			}
 		}
 	}
-
+	
 	Matrix::~Matrix() {
 		for (int i = 0; i < rowSize; ++i) {
 			delete &matrix[i];

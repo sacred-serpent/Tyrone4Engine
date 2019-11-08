@@ -18,6 +18,9 @@ project "Tyrone4"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "typch.h"
+	pchsource "Tyrone4/src/typch.cpp"
+
 	files {
 		"%{prj.name}/src/**.h", 
 		"%{prj.name}/src/**.cpp"

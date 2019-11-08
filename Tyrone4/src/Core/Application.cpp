@@ -1,3 +1,4 @@
+#include "typch.h"
 #include "Application.h"
 
 namespace Tyrone4 {
