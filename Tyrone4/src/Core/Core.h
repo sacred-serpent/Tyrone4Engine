@@ -9,3 +9,5 @@
 #else
 	#error Tyrone4 currently supports Windows only.
 #endif
+
+#define BIT(x) (1 << x)

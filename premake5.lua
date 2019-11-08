@@ -24,7 +24,8 @@ project "Tyrone4"
 	}
 
 	includedirs {
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include", 
+		"%{prj.name}/src"
 	}
 
 	filter "system:windows"
