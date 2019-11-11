@@ -29,7 +29,7 @@ namespace Tyrone4 {
 	class TYRONE4_API WindowCloseEvent : public Event {
 
 	public:
-		WindowCloseEvent();
+		WindowCloseEvent() {}
 
 		EVENT_CLASS_TYPE(WindowClose)
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
@@ -39,7 +39,7 @@ namespace Tyrone4 {
 	class TYRONE4_API AppTickEvent : public Event {
 
 	public:
-		AppTickEvent();
+		AppTickEvent() {}
 
 		EVENT_CLASS_TYPE(AppTick)
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
@@ -49,7 +49,7 @@ namespace Tyrone4 {
 	class TYRONE4_API AppUpdateEvent : public Event {
 
 	public:
-		AppUpdateEvent();
+		AppUpdateEvent() {}
 
 		EVENT_CLASS_TYPE(AppUpdate)
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
@@ -59,7 +59,7 @@ namespace Tyrone4 {
 	class TYRONE4_API AppRenderEvent : public Event {
 
 	public:
-		AppRenderEvent();
+		AppRenderEvent() {}
 
 		EVENT_CLASS_TYPE(AppRender)
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)

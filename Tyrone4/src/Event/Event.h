@@ -1,6 +1,5 @@
 #pragma once
-
-
+#include "typch.h"
 #include "Core/Core.h"
 
 namespace Tyrone4 {
@@ -44,31 +43,31 @@ namespace Tyrone4 {
 
 	};
 
-	class TYRONE4_API EventBuffer {
+	/*class TYRONE4_API EventBuffer {
 
 	public:
-		EventBuffer(int size) : Buffer(*new std::vector< std::vector<Event> >), m_size(size) {
-			Buffer.resize(m_size);
+		EventBuffer(int size) : m_Buffer(new std::vector< std::vector<Event> >), m_size(size) {
+			m_Buffer->resize(m_size);
 		}
 		~EventBuffer() {
-			delete &Buffer;
+			delete &m_Buffer;
 		}
 
 		inline int GetSize() { return m_size; }
-		void Push(Event& event) { Buffer[0].push_back(event);  }
+		void Push(Event& event) { m_Buffer[0].push_back(event);  }
 		void Forward() {
 
 			for (int i = m_size - 2; i >= 0; --i) {
-				Buffer[i + 1].swap(Buffer[i]);
+				m_Buffer[i + 1].swap(m_Buffer[i]);
 			}
-			Buffer[0].resize(0);
+			m_Buffer[0].resize(0);
 		};
 		
 	private:
 		int m_size;
-		std::vector<std::vector<Event>>& Buffer;
+		std::vector<std::vector<Event>>* m_Buffer;
 		
 
-	};
+	};*/
 
 }

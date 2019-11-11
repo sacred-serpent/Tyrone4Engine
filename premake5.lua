@@ -9,6 +9,11 @@ workspace "Tyrone4Engine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Tyrone4/vendor/GLFW/include"
+
+include "Tyrone4/vendor/GLFW"
+
 project "Tyrone4"
 	location "Tyrone4"
 	kind "SharedLib"
@@ -28,7 +33,13 @@ project "Tyrone4"
 
 	includedirs {
 		"%{prj.name}/vendor/spdlog/include", 
-		"%{prj.name}/src"
+		"%{prj.name}/src",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links {
+		"GLFW", 
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
@@ -38,7 +49,8 @@ project "Tyrone4"
 
 		defines {
 			"TY_PLATFORM_WINDOWS",
-			"TY_BUILD_DLL"
+			"TY_BUILD_DLL",
+			"TY_ENABLE_ASSERTS"
 		}
 
 		postbuildcommands {
