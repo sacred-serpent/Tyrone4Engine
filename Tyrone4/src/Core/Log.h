@@ -1,5 +1,9 @@
 #pragma once
 
+// Using spdlog library to handle logging.
+// Creates a Client Logger for client side logging and Core
+// for Engine related logging.
+
 #include "Core.h"
 #include "spdlog/spdlog.h"
 

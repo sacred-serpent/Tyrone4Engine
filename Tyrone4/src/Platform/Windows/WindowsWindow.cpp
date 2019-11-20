@@ -19,6 +19,7 @@ namespace Tyrone4 {
 		Shutdown();
 	}
 
+	// Gets called at creation and initialization.
 	void WindowsWindow::Init(const WindowProps& props) {
 		m_Data.Title = props.Title;
 		m_Data.Width = props.Width;

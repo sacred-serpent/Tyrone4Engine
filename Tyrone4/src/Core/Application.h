@@ -3,6 +3,9 @@
 #include "Event/Event.h"
 #include "Window.h"
 
+// Basic Application class to be inherited from by
+// applications using Tyrone4.
+
 namespace Tyrone4 {
 
 	class TYRONE4_API Application {
@@ -18,7 +21,7 @@ namespace Tyrone4 {
 		bool m_Running = true;
 	};
 
-	// To be defined in client
+	// To be defined in client.
 	Application* CreateApplication();
 
 }

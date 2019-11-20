@@ -1,5 +1,7 @@
 #pragma once
 
+// Precompiled header for Tyrone4.
+
 #include <iostream>
 #include <memory>
 #include <functional>

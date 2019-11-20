@@ -1,5 +1,7 @@
 #pragma once
 
+// Core file contains build information.
+
 #ifdef TY_PLATFORM_WINDOWS
 	#ifdef TY_BUILD_DLL
 		#define TYRONE4_API __declspec(dllexport)

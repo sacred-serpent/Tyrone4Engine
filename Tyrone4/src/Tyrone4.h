@@ -1,6 +1,6 @@
 #pragma once
 
-// For use by Tyrone4 Applications
+// Includes everything needed for use by Tyrone4 Applications.
 
 #include "Core/Application.h"
 #include "Core/Log.h"

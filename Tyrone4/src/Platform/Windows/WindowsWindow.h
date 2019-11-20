@@ -6,6 +6,8 @@
 
 namespace Tyrone4 {
 
+	// Windows specific Window class.
+	// Currently uses GLFW.
 	class WindowsWindow : public Window {
 
 	public:

@@ -18,6 +18,8 @@ namespace Tyrone4 {
 
 	};
 
+	// Base window class to be inherited from by platform specific window classes.
+
 	class TYRONE4_API Window {
 
 	public:
